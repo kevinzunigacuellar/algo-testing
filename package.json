@@ -1,0 +1,15 @@
+{
+  "name": "testing-algos",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Kevin Zuniga Cuellar",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
