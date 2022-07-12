@@ -1,17 +1,14 @@
 import { assert } from "chai"
-import { describe, it } from "mocha"
-import Node from "../data_structures/Node.js"
+import { Node } from "../src/data_structures/Node"
 
 describe("Testing the Node class", () => {
-  let node
-  beforeEach(() => {
-    node = new Node(1)
-  })
   it("should get the value of the node as 1", () => {
+    const node = new Node(1)
     assert.equal(node.getValue(), 1)
   })
 
   it("should set the value of the node to 2", () => {
+    const node = new Node(1)
     node.setValue(2)
     assert.equal(node.getValue(), 2)
   })

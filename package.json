@@ -4,12 +4,15 @@
   "description": "",
   "author": "Kevin Zuniga Cuellar",
   "license": "MIT",
-  "type": "module",
   "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' mocha --require ts-node/register ./tests/**/*.spec.ts"
   }
 }

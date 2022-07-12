@@ -1,8 +1,8 @@
-class Node {
-  #value
-  #next
+export class Node<T> {
+  #value: T | null = null
+  #next: Node<T> | null = null
 
-  constructor(value) {
+  constructor(value: T) {
     this.#value = value
     this.#next = null
   }
@@ -15,13 +15,11 @@ class Node {
     return this.#next
   }
 
-  setValue(value) {
+  setValue(value: T) {
     this.#value = value
   }
 
-  setNext(next) {
+  setNext(next: Node<T>) {
     this.#next = next
   }
 }
-
-export default Node
