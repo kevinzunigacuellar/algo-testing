@@ -1,5 +1,12 @@
-export class Node<T> {
-  #value: T | null = null
+export interface NodeType<T> {
+  getNext(): NodeType<T> | null
+  getValue(): T
+  setValue(value: T): void
+  setNext(next: NodeType<T> | null): void
+}
+
+export class Node<T> implements NodeType<T> {
+  #value: T
   #next: Node<T> | null = null
 
   constructor(value: T) {
