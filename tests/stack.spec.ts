@@ -8,9 +8,6 @@ describe("Testing the Stack<number> class", () => {
   before(() => {
     stack = new Stack()
   })
-  it("should create a new stack", () => {
-    expect(stack.peek()).to.equal(null)
-  })
 
   it("should push 1 to the stack", () => {
     stack.push(1)
@@ -35,6 +32,6 @@ describe("Testing the Stack<number> class", () => {
   })
 
   it("should be empty", () => {
-    expect(stack.peek()).to.equal(null)
+    expect(stack.isEmpty()).to.equal(true)
   })
 })

@@ -24,4 +24,8 @@ export class Stack<T> {
   peek() {
     return this.#top
   }
+
+  isEmpty() {
+    return this.#top === null
+  }
 }
