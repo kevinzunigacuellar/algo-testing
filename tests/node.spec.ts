@@ -7,11 +7,11 @@ describe("Testing the Node<number> class", () => {
     node = new Node(1)
   })
 
-  it("should create a new node with value 1", () => {
+  it("should create a node with value 1", () => {
     expect(node.getValue()).to.equal(1)
   })
 
-  it("should create a node and append it to the last node", () => {
+  it("should create a new node and append it to the last node", () => {
     const node2 = new Node(2, node)
     expect(node2.getNext()).to.equal(node)
   })
