@@ -4,7 +4,6 @@
 
 Test and store your data structures and algorithms code in TypeScript or JavaScript for interview preparation.
 
-
 ## Installation
 
 1. Fork this project and start hacking
@@ -27,9 +26,8 @@ So far there are tests for the following data structures:
 
 - [x] Node
 - [x] Stack
-- [ ] Queue
+- [x] Queue
 - [ ] Linked List
-
 
 ## Technologies:
 
