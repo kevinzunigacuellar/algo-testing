@@ -1,3 +1,9 @@
+/*
+note:
+ 
+NodeType might be irrelevant here, because interfaces are used for public types and not private types.
+Only good for exporting the type of the node for a typescript assertion
+
 export interface NodeType<T> {
   getNext(): NodeType<T> | null
   getValue(): T
@@ -5,13 +11,15 @@ export interface NodeType<T> {
   setNext(next: NodeType<T> | null): void
 }
 
-export class Node<T> implements NodeType<T> {
-  #value: T
-  #next: Node<T> | null = null
+*/
 
-  constructor(value: T) {
+export class Node<T> {
+  #value: T
+  #next: Node<T> | null
+
+  constructor(value: T, next: Node<T> | null = null) {
     this.#value = value
-    this.#next = null
+    this.#next = next
   }
 
   getValue() {
